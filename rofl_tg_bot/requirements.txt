@@ -1,0 +1,9 @@
+aiogram
+python-dotenv
+aiosqlite
+google-generativeai
+SpeechRecognition
+pydub
+Pillow
+apscheduler
+aiofiles

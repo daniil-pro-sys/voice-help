@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/cat_stt">
+
+        <ListPreference
+            android:key="stt_language"
+            android:title="@string/stt_language_title"
+            android:summary="@string/stt_language_summary"
+            android:entries="@array/stt_language_entries"
+            android:entryValues="@array/stt_language_values" />
+
+        <Preference
+            android:key="stt_model"
+            android:title="@string/stt_model_title"
+            android:summary="@string/stt_model_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cat_llm">
+
+        <SwitchPreferenceCompat
+            android:key="llm_enabled"
+            android:title="@string/llm_enabled_title"
+            android:summary="@string/llm_enabled_summary"
+            android:defaultValue="true" />
+
+        <EditTextPreference
+            android:key="llm_base_url"
+            android:title="@string/llm_base_url_title"
+            android:summary="@string/llm_base_url_summary" />
+
+        <EditTextPreference
+            android:key="llm_api_key"
+            android:title="@string/llm_api_key_title"
+            android:summary="@string/llm_api_key_summary"
+            android:inputType="textPassword" />
+
+        <ListPreference
+            android:key="llm_model"
+            android:title="@string/llm_model_title"
+            android:summary="@string/llm_model_summary" />
+
+        <Preference
+            android:key="llm_refresh_models"
+            android:title="@string/llm_refresh_models_title"
+            android:summary="@string/llm_refresh_models_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cat_tts">
+
+        <SwitchPreferenceCompat
+            android:key="tts_enabled"
+            android:title="@string/tts_enabled_title"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="tts_engine"
+            android:title="@string/tts_engine_title" />
+
+        <ListPreference
+            android:key="tts_voice"
+            android:title="@string/tts_voice_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cat_conversation">
+
+        <SwitchPreferenceCompat
+            android:key="conversation_mode"
+            android:title="@string/conv_mode_title"
+            android:summary="@string/conv_mode_summary"
+            android:defaultValue="true" />
+
+        <EditTextPreference
+            android:key="stop_words"
+            android:title="@string/conv_stop_words_title"
+            android:summary="@string/conv_stop_words_summary"
+            android:defaultValue="@string/pref_default_stop_words" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cat_assistant">
+
+        <SwitchPreferenceCompat
+            android:key="assistant_default"
+            android:title="@string/assistant_default_title"
+            android:summary="@string/assistant_default_not_held" />
+
+        <EditTextPreference
+            android:key="contact_aliases"
+            android:title="@string/assistant_contacts_title"
+            android:summary="@string/assistant_contacts_summary"
+            android:inputType="textMultiLine"
+            android:selectAllOnFocus="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cat_sounds">
+
+        <SwitchPreferenceCompat
+            android:key="sounds_enabled"
+            android:title="@string/sounds_enabled_title"
+            android:summary="@string/sounds_enabled_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cat_online_tts">
+
+        <SwitchPreferenceCompat
+            android:key="online_tts_enabled"
+            android:title="@string/online_tts_enabled_title"
+            android:summary="@string/online_tts_enabled_summary"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="online_tts_voice"
+            android:title="@string/online_tts_voice_title"
+            android:summary="@string/online_tts_voice_summary"
+            android:defaultValue="@string/pref_default_online_tts_voice" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cat_search">
+
+        <SwitchPreferenceCompat
+            android:key="search_enabled"
+            android:title="@string/search_enabled_title"
+            android:summary="@string/search_enabled_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

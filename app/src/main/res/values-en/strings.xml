@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Voice Help</string>
+    <string name="app_name_full">Voice Help — voice assistant</string>
+
+    <!-- Main screen -->
+    <string name="main_hint">Tap the microphone and say a command, e.g. \"Call mom\"</string>
+    <string name="main_start">Listen</string>
+    <string name="main_settings">Settings</string>
+    <string name="main_commands">Commands</string>
+    <string name="main_default_assistant_yes">You are the default assistant</string>
+    <string name="main_default_assistant_no">Not set as default assistant</string>
+    <string name="main_tap_to_set">Set up in settings</string>
+
+    <!-- Assistant dialog -->
+    <string name="assistant_status_idle">Ready</string>
+    <string name="assistant_status_listening">Listening…</string>
+    <string name="assistant_status_recognizing">Recognizing…</string>
+    <string name="assistant_status_thinking">Thinking…</string>
+    <string name="assistant_status_speaking">Speaking…</string>
+    <string name="assistant_status_error">Error</string>
+    <string name="assistant_status_mic_denied">No microphone access</string>
+    <string name="assistant_hint">Say a command: \"Call mom\", \"Timer for 5 minutes\", \"Take a photo\"</string>
+    <string name="assistant_close">Close</string>
+    <string name="assistant_processing">Processing…</string>
+    <string name="assistant_you_prefix">You: %1$s</string>
+    <string name="assistant_reply_prefix">Assistant: %1$s</string>
+    <string name="assistant_model_missing">Speech recognition model is not downloaded. Download it in settings.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="cat_stt">Speech recognition (STT)</string>
+    <string name="stt_language_title">Model language</string>
+    <string name="stt_language_summary">Vosk offline recognition language</string>
+    <string name="stt_language_ru">Русский</string>
+    <string name="stt_language_en">English</string>
+    <string name="stt_model_title">Vosk model</string>
+    <string name="stt_model_summary">Download or delete the local model (~50 MB)</string>
+    <string name="stt_offline_title">Offline recognition (Vosk)</string>
+    <string name="stt_offline_summary">Works without internet, on device</string>
+
+    <string name="cat_llm">Smart mode (OpenAI-compatible API)</string>
+    <string name="llm_enabled_title">Smart mode</string>
+    <string name="llm_enabled_summary">LLM understands commands and chats; offline uses local rules</string>
+    <string name="llm_base_url_title">Base URL</string>
+    <string name="llm_base_url_summary">E.g. https://api.openai.com or http://localhost:11434/v1</string>
+    <string name="llm_api_key_title">API key</string>
+    <string name="llm_api_key_summary">Provider key</string>
+    <string name="llm_model_title">Model</string>
+    <string name="llm_model_summary">Choose a model from the list</string>
+    <string name="llm_refresh_models_title">Refresh model list</string>
+    <string name="llm_refresh_models_summary">Loads available models from the server</string>
+    <string name="llm_refresh_ok">Updated: %1$d models</string>
+    <string name="llm_refresh_fail">Could not load models. Check URL and key.</string>
+    <string name="llm_models_empty">Model list is empty</string>
+
+    <string name="cat_tts">Voice (TTS)</string>
+    <string name="tts_enabled_title">Speak answers</string>
+    <string name="tts_engine_title">TTS engine</string>
+    <string name="tts_voice_title">Voice</string>
+    <string name="tts_voice_default">System voice</string>
+    <string name="tts_no_voices">No voices found</string>
+
+    <string name="cat_conversation">Conversation</string>
+    <string name="conv_mode_title">Conversation mode</string>
+    <string name="conv_mode_summary">After an answer the microphone turns on again until you say a stop word</string>
+    <string name="conv_stop_words_title">Stop words</string>
+    <string name="conv_stop_words_summary">Comma-separated: стоп, хватит, stop, exit…</string>
+
+    <string name="cat_assistant">Assistant</string>
+    <string name="assistant_default_title">Default assistant</string>
+    <string name="assistant_default_held">You are set as the system assistant</string>
+    <string name="assistant_default_not_held">Tap to choose in system settings</string>
+    <string name="assistant_default_unavailable">Not available on this device</string>
+    <string name="assistant_contacts_title">Contact aliases</string>
+    <string name="assistant_contacts_summary">Lines like: mom=+79161234567, dad=+79260000000</string>
+
+    <string name="cat_sounds">Sounds</string>
+    <string name="sounds_enabled_title">Sound effects</string>
+    <string name="sounds_enabled_summary">Sounds for start, end of recognition, errors</string>
+
+    <string name="cat_search">Search</string>
+    <string name="search_enabled_title">Internet search</string>
+    <string name="search_enabled_summary">Free DuckDuckGo Instant Answer</string>
+
+    <string name="cat_online_tts">Online voice (Azure)</string>
+    <string name="online_tts_enabled_title">Online speech</string>
+    <string name="online_tts_enabled_summary">Azure HD voices without a key (needs internet); falls back to system TTS on error</string>
+    <string name="online_tts_voice_title">Voice name</string>
+    <string name="online_tts_voice_summary">en-US-Phoebe:DragonHDLatestNeural speaks both Russian and English</string>
+    <string name="pref_default_online_tts_voice">en-US-Phoebe:DragonHDLatestNeural</string>
+
+    <!-- Model download -->
+    <string name="model_title">Vosk model</string>
+    <string name="model_lang_ru">Russian model</string>
+    <string name="model_lang_en">English model</string>
+    <string name="model_status_not_downloaded">Not downloaded</string>
+    <string name="model_status_downloading">Downloading… %1$d%%</string>
+    <string name="model_status_downloaded">Downloaded, ready</string>
+    <string name="model_download">Download</string>
+    <string name="model_delete">Delete</string>
+    <string name="model_download_failed">Download error: %1$s</string>
+    <string name="model_download_notif_channel">Model downloads</string>
+    <string name="model_download_notif_title">Downloading speech recognition model</string>
+
+    <!-- Help -->
+    <string name="help_title">Commands</string>
+    <string name="help_builtin_header">Built-in commands</string>
+    <string name="help_custom_header">My commands</string>
+    <string name="help_custom_empty">No custom commands yet. Tap \"+\" to add one.</string>
+    <string name="help_add_trigger">Add command</string>
+    <string name="help_edit_trigger">Edit command</string>
+    <string name="trigger_name">Name</string>
+    <string name="trigger_phrases">Phrases (comma-separated)</string>
+    <string name="trigger_action">Action</string>
+    <string name="trigger_reply">Reply text</string>
+    <string name="trigger_params">Parameter (name/number, message text, minutes…)</string>
+    <string name="action_reply">Reply with text</string>
+    <string name="action_call">Call</string>
+    <string name="action_sms">Send SMS</string>
+    <string name="action_timer">Timer</string>
+    <string name="action_alarm">Alarm</string>
+    <string name="action_flashlight">Flashlight</string>
+    <string name="action_photo">Photo</string>
+    <string name="action_open_app">Open app</string>
+    <string name="action_search">Internet search</string>
+    <string name="action_time">Time</string>
+    <string name="action_stop">End conversation</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+
+    <!-- Help descriptions -->
+    <string name="help_desc_call">Makes a call. Aliases \"mom=number\" are set in settings</string>
+    <string name="help_desc_sms">Sends an SMS to the given contact</string>
+    <string name="help_desc_timer">Sets a timer for the desired time</string>
+    <string name="help_desc_alarm">Sets an alarm at the given time</string>
+    <string name="help_desc_flashlight">Turns the flashlight on and off</string>
+    <string name="help_desc_photo">Takes a photo and saves it to the gallery</string>
+    <string name="help_desc_open_app">Opens an app by name</string>
+    <string name="help_desc_search">Searches the internet (DuckDuckGo)</string>
+    <string name="help_desc_time">Tells the current time</string>
+    <string name="help_desc_stop">Ends the conversation: \"stop\", \"exit\"</string>
+
+    <!-- Replies -->
+    <string name="reply_hello">Hi! How can I help?</string>
+    <string name="reply_how_are_you">Great, everything works!</string>
+    <string name="reply_thanks">You’re welcome!</string>
+    <string name="reply_help">I can: call, send messages, set timers and alarms, turn on the flashlight, take photos, search the internet. Say \"help\" to see the list of commands.</string>
+    <string name="reply_not_understood">Sorry, I didn’t get that. Say \"help\" to see the list of commands.</string>
+    <string name="reply_heard_nothing">I didn’t hear you, please repeat</string>
+    <string name="reply_no_permission">No permission for %1$s. Grant it in phone settings.</string>
+    <string name="reply_calling">Calling %1$s</string>
+    <string name="reply_cant_find_contact">Couldn’t find contact %1$s. Add an alias in settings.</string>
+    <string name="reply_sms_sent">Message sent to %1$s</string>
+    <string name="reply_timer_set">Timer set for %1$s</string>
+    <string name="reply_timer_done">Timer is up!</string>
+    <string name="reply_alarm_set">Alarm set for %1$s</string>
+    <string name="reply_alarm_done">Alarm!</string>
+    <string name="reply_flash_on">Flashlight on</string>
+    <string name="reply_flash_off">Flashlight off</string>
+    <string name="reply_photo_taken">Photo taken</string>
+    <string name="reply_photo_failed">Couldn’t take a photo</string>
+    <string name="reply_no_flash">This device has no flashlight</string>
+    <string name="reply_opening">Opening %1$s</string>
+    <string name="reply_app_not_found">App %1$s not found</string>
+    <string name="reply_time">It’s %1$s now</string>
+    <string name="reply_search_nothing">Nothing found for %1$s</string>
+    <string name="reply_offline_no_llm">Smart mode is unavailable offline or without a key. Say \"help\".</string>
+    <string name="reply_sms_no_text">What should I write? E.g. send a message to mom I’m home at seven</string>
+    <string name="reply_timer_bad_format">I didn’t get the time. E.g. timer for 5 minutes</string>
+    <string name="reply_alarm_bad_format">I didn’t get the time. E.g. alarm at 7:30</string>
+    <string name="reply_sms_no_target">Who should I send it to? E.g. send a message to mom I’m home at seven</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_timer">Timers and alarms</string>
+    <string name="notif_timer_title">Timer</string>
+    <string name="notif_alarm_title">Alarm</string>
+
+    <!-- Permission labels -->
+    <string name="perm_call">calls</string>
+    <string name="perm_sms">sending messages</string>
+    <string name="perm_camera">camera</string>
+    <string name="perm_flash">flashlight</string>
+
+    <!-- Default pref values -->
+    <string name="pref_default_language">en</string>
+    <string name="pref_default_stop_words">стоп, хватит, достаточно, stop, exit, quit</string>
+</resources>

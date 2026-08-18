@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Voice Help</string>
+    <string name="app_name_full">Voice Help — голосовой ассистент</string>
+
+    <!-- Main screen -->
+    <string name="main_hint">Нажмите на микрофон и скажите команду, например «Позвони маме»</string>
+    <string name="main_start">Слушать</string>
+    <string name="main_settings">Настройки</string>
+    <string name="main_commands">Команды</string>
+    <string name="main_default_assistant_yes">Вы — ассистент по умолчанию</string>
+    <string name="main_default_assistant_no">Не назначен ассистентом по умолчанию</string>
+    <string name="main_tap_to_set">Настроить в настройках</string>
+
+    <!-- Assistant dialog -->
+    <string name="assistant_status_idle">Готов к работе</string>
+    <string name="assistant_status_listening">Слушаю…</string>
+    <string name="assistant_status_recognizing">Распознаю…</string>
+    <string name="assistant_status_thinking">Думаю…</string>
+    <string name="assistant_status_speaking">Говорю…</string>
+    <string name="assistant_status_error">Ошибка</string>
+    <string name="assistant_status_mic_denied">Нет доступа к микрофону</string>
+    <string name="assistant_hint">Скажите команду: «Позвони маме», «Таймер на 5 минут», «Сделай фото»</string>
+    <string name="assistant_close">Закрыть</string>
+    <string name="assistant_processing">Обработка…</string>
+    <string name="assistant_you_prefix">Вы: %1$s</string>
+    <string name="assistant_reply_prefix">Ассистент: %1$s</string>
+    <string name="assistant_model_missing">Модель распознавания не загружена. Загрузите её в настройках.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="cat_stt">Распознавание речи (STT)</string>
+    <string name="stt_language_title">Язык модели</string>
+    <string name="stt_language_summary">Язык офлайн-распознавания Vosk</string>
+    <string name="stt_language_ru">Русский</string>
+    <string name="stt_language_en">English</string>
+    <string name="stt_model_title">Модель Vosk</string>
+    <string name="stt_model_summary">Скачать или удалить локальную модель (~50 МБ)</string>
+    <string name="stt_offline_title">Офлайн-распознавание (Vosk)</string>
+    <string name="stt_offline_summary">Работает без интернета, на устройстве</string>
+
+    <string name="cat_llm">Умный режим (OpenAI-совместимый API)</string>
+    <string name="llm_enabled_title">Умный режим</string>
+    <string name="llm_enabled_summary">LLM понимает команды и ведёт диалог; офлайн — локальные правила</string>
+    <string name="llm_base_url_title">Base URL</string>
+    <string name="llm_base_url_summary">Например: https://api.openai.com или http://localhost:11434/v1</string>
+    <string name="llm_api_key_title">API ключ</string>
+    <string name="llm_api_key_summary">Ключ провайдера</string>
+    <string name="llm_model_title">Модель</string>
+    <string name="llm_model_summary">Выберите модель из списка</string>
+    <string name="llm_refresh_models_title">Обновить список моделей</string>
+    <string name="llm_refresh_models_summary">Загружает доступные модели с сервера</string>
+    <string name="llm_refresh_ok">Обновлено: %1$d моделей</string>
+    <string name="llm_refresh_fail">Не удалось получить модели. Проверьте URL и ключ.</string>
+    <string name="llm_models_empty">Список моделей пуст</string>
+
+    <string name="cat_tts">Голос (TTS)</string>
+    <string name="tts_enabled_title">Озвучивать ответы</string>
+    <string name="tts_engine_title">Движок TTS</string>
+    <string name="tts_voice_title">Голос</string>
+    <string name="tts_voice_default">Голос системы</string>
+    <string name="tts_no_voices">Голоса не найдены</string>
+
+    <string name="cat_conversation">Разговор</string>
+    <string name="conv_mode_title">Режим разговора</string>
+    <string name="conv_mode_summary">После ответа микрофон включается снова, пока не скажете стоп-слово</string>
+    <string name="conv_stop_words_title">Стоп-слова</string>
+    <string name="conv_stop_words_summary">Через запятую: стоп, хватит, stop, exit…</string>
+
+    <string name="cat_assistant">Ассистент</string>
+    <string name="assistant_default_title">Ассистент по умолчанию</string>
+    <string name="assistant_default_held">Вы назначены системным ассистентом</string>
+    <string name="assistant_default_not_held">Нажмите, чтобы выбрать в системных настройках</string>
+    <string name="assistant_default_unavailable">Недоступно на этом устройстве</string>
+    <string name="assistant_contacts_title">Алиасы контактов</string>
+    <string name="assistant_contacts_summary">Строки вида: мама=+79161234567, папа=+79260000000</string>
+
+    <string name="cat_sounds">Звуки</string>
+    <string name="sounds_enabled_title">Звуковые эффекты</string>
+    <string name="sounds_enabled_summary">Звуки начала, окончания распознавания, ошибок</string>
+
+    <string name="cat_search">Поиск</string>
+    <string name="search_enabled_title">Поиск в интернете</string>
+    <string name="search_enabled_summary">Бесплатный DuckDuckGo Instant Answer</string>
+
+    <string name="cat_online_tts">Online-голос (Azure)</string>
+    <string name="online_tts_enabled_title">Online-озвучка</string>
+    <string name="online_tts_enabled_summary">Azure HD-голоса без ключа (нужен интернет); при ошибке — системный TTS</string>
+    <string name="online_tts_voice_title">Имя голоса</string>
+    <string name="online_tts_voice_summary">en-US-Phoebe:DragonHDLatestNeural говорит и по-русски, и по-английски</string>
+    <string name="pref_default_online_tts_voice">en-US-Phoebe:DragonHDLatestNeural</string>
+
+    <!-- Model download -->
+    <string name="model_title">Модель Vosk</string>
+    <string name="model_lang_ru">Русская модель</string>
+    <string name="model_lang_en">Английская модель</string>
+    <string name="model_status_not_downloaded">Не скачана</string>
+    <string name="model_status_downloading">Скачивается… %1$d%%</string>
+    <string name="model_status_downloaded">Скачана, готова к работе</string>
+    <string name="model_download">Скачать</string>
+    <string name="model_delete">Удалить</string>
+    <string name="model_download_failed">Ошибка загрузки: %1$s</string>
+    <string name="model_download_notif_channel">Скачивание моделей</string>
+    <string name="model_download_notif_title">Скачивание модели распознавания</string>
+
+    <!-- Help -->
+    <string name="help_title">Команды</string>
+    <string name="help_builtin_header">Встроенные команды</string>
+    <string name="help_custom_header">Мои команды</string>
+    <string name="help_custom_empty">Кастомных команд пока нет. Нажмите «+» чтобы добавить.</string>
+    <string name="help_add_trigger">Добавить команду</string>
+    <string name="help_edit_trigger">Изменить команду</string>
+    <string name="trigger_name">Название</string>
+    <string name="trigger_phrases">Фразы (через запятую)</string>
+    <string name="trigger_action">Действие</string>
+    <string name="trigger_reply">Текст ответа</string>
+    <string name="trigger_params">Параметр (имя/номер, текст сообщения, минуты…)</string>
+    <string name="action_reply">Ответить текстом</string>
+    <string name="action_call">Позвонить</string>
+    <string name="action_sms">Отправить SMS</string>
+    <string name="action_timer">Таймер</string>
+    <string name="action_alarm">Будильник</string>
+    <string name="action_flashlight">Фонарик</string>
+    <string name="action_photo">Фото</string>
+    <string name="action_open_app">Открыть приложение</string>
+    <string name="action_search">Поиск в интернете</string>
+    <string name="action_time">Время</string>
+    <string name="action_stop">Завершение разговора</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete">Удалить</string>
+
+    <!-- Help descriptions -->
+    <string name="help_desc_call">Совершает звонок. Алиасы «мама=номер» настраиваются в настройках</string>
+    <string name="help_desc_sms">Отправляет SMS указанному контакту</string>
+    <string name="help_desc_timer">Устанавливает таймер на нужное время</string>
+    <string name="help_desc_alarm">Ставит будильник на указанное время</string>
+    <string name="help_desc_flashlight">Включает и выключает фонарик</string>
+    <string name="help_desc_photo">Делает фото и сохраняет в галерею</string>
+    <string name="help_desc_open_app">Открывает приложение по названию</string>
+    <string name="help_desc_search">Ищет информацию в интернете (DuckDuckGo)</string>
+    <string name="help_desc_time">Называет текущее время</string>
+    <string name="help_desc_stop">Завершает разговор: «стоп», «хватит», «exit»</string>
+
+    <!-- Replies -->
+    <string name="reply_hello">Привет! Чем могу помочь?</string>
+    <string name="reply_how_are_you">Отлично, всё работает!</string>
+    <string name="reply_thanks">Пожалуйста!</string>
+    <string name="reply_help">Я умею: звонить, отправлять сообщения, ставить таймеры и будильники, включать фонарик, делать фото, искать в интернете. Скажите «помощь», чтобы увидеть список команд.</string>
+    <string name="reply_not_understood">Не понял. Скажите «помощь», чтобы увидеть список команд.</string>
+    <string name="reply_heard_nothing">Не расслышал, повторите, пожалуйста</string>
+    <string name="reply_no_permission">Нет разрешения на %1$s. Выдайте его в настройках телефона.</string>
+    <string name="reply_calling">Звоню %1$s</string>
+    <string name="reply_cant_find_contact">Не нашёл контакт %1$s. Добавьте алиас в настройках.</string>
+    <string name="reply_sms_sent">Сообщение отправлено %1$s</string>
+    <string name="reply_timer_set">Таймер на %1$s установлен</string>
+    <string name="reply_timer_done">Таймер сработал!</string>
+    <string name="reply_alarm_set">Будильник на %1$s установлен</string>
+    <string name="reply_alarm_done">Будильник!</string>
+    <string name="reply_flash_on">Фонарик включён</string>
+    <string name="reply_flash_off">Фонарик выключен</string>
+    <string name="reply_photo_taken">Сфотографировал</string>
+    <string name="reply_photo_failed">Не получилось сделать фото</string>
+    <string name="reply_no_flash">На устройстве нет фонарика</string>
+    <string name="reply_opening">Открываю %1$s</string>
+    <string name="reply_app_not_found">Приложение %1$s не найдено</string>
+    <string name="reply_time">Сейчас %1$s</string>
+    <string name="reply_search_nothing">Ничего не нашёл по запросу %1$s</string>
+    <string name="reply_offline_no_llm">Умный режим недоступен офлайн или без ключа. Скажите «помощь».</string>
+    <string name="reply_sms_no_text">Что написать? Например: отправь сообщение маме приду в семь</string>
+    <string name="reply_timer_bad_format">Не понял время. Например: таймер на 5 минут</string>
+    <string name="reply_alarm_bad_format">Не понял время. Например: будильник на 7:30</string>
+    <string name="reply_sms_no_target">Кому отправить? Например: отправь сообщение маме приду в семь</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_timer">Таймеры и будильники</string>
+    <string name="notif_timer_title">Таймер</string>
+    <string name="notif_alarm_title">Будильник</string>
+
+    <!-- Permission labels -->
+    <string name="perm_call">звонки</string>
+    <string name="perm_sms">отправку сообщений</string>
+    <string name="perm_camera">камеру</string>
+    <string name="perm_flash">фонарик</string>
+
+    <!-- Default pref values -->
+    <string name="pref_default_language">ru</string>
+    <string name="pref_default_stop_words">стоп, хватит, достаточно, stop, exit, quit</string>
+</resources>
